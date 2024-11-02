@@ -1,0 +1,64 @@
+name: aws-lab1
+build_projects_mapping:
+  nodejs: app
+lambdas:
+  hello_world:
+    runtime: nodejs
+events:
+- operation: deploy
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  deploy_name: lab-1
+  time_start: '2024-11-02T09:22:34Z'
+  time_end: '2024-11-02T09:22:54Z'
+  duration_sec: 20.121
+  status: succeeded
+  rollback_on_error: false
+- operation: build
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  time_start: '2024-11-02T09:19:54Z'
+  time_end: '2024-11-02T09:20:01Z'
+  duration_sec: 6.598
+- operation: upload
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  time_start: '2024-11-02T09:19:59Z'
+  time_end: '2024-11-02T09:20:01Z'
+  duration_sec: 1.694
+- operation: package_meta
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  time_start: '2024-11-02T09:19:59Z'
+  time_end: '2024-11-02T09:19:59Z'
+  duration_sec: 0.22
+- operation: assemble
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  time_start: '2024-11-02T09:19:56Z'
+  time_end: '2024-11-02T09:19:59Z'
+  duration_sec: 2.912
+- operation: assemble_node
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  time_start: '2024-11-02T09:19:56Z'
+  time_end: '2024-11-02T09:19:59Z'
+  duration_sec: 2.887
+- operation: test
+  initiator: nurlan
+  time_start: '2024-11-02T09:19:56Z'
+  time_end: '2024-11-02T09:19:56Z'
+  duration_sec: 0.004
+locks:
+  modification_lock:
+    last_modification_date: '2024-11-02T04:22:54Z'
+    locked_till: null
+    initiator: nurlan
+latest_deploy:
+  initiator: nurlan
+  bundle_name: aws-lab1_241102.091953
+  deploy_name: lab-1
+  time_start: '2024-11-02T09:22:34Z'
+  time_end: '2024-11-02T09:22:54Z'
+  duration_sec: 20.121
+  is_succeeded: true

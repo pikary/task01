@@ -1,0 +1,72 @@
+2024-11-02 09:19:03,192 [WARNING] USER:nurlan __init__.py:190:initialize_project_state LOG: [93mConfig is set and generated but project state does not exist, seems that you've come from the previous version.[0m
+2024-11-02 09:19:03,193 [WARNING] USER:nurlan __init__.py:193:initialize_project_state LOG: [93mGenerating project state file (.syndicate) from the existing structure...[0m
+2024-11-02 09:19:03,208 [INFO] USER:nurlan helper.py:587:check_lambda_name LOG: Validating lambda name: 'hello_world'
+2024-11-02 09:19:03,208 [INFO] USER:nurlan helper.py:602:check_lambda_name LOG: Lambda name: 'hello_world' passed the validation
+2024-11-02 09:19:03,209 [INFO] USER:nurlan helper.py:576:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2024-11-02 09:19:03,210 [INFO] USER:nurlan helper.py:580:resolve_project_path LOG: Path: 'C:/Users/nurlan/Desktop/aws-lab1' was assigned to the parameter: 'project_path'
+2024-11-02 09:19:03,224 [INFO] USER:nurlan lambda_function.py:439:_generate_nodejs_lambdas LOG: Lambda hello_world created
+2024-11-02 09:19:03,226 [INFO] USER:nurlan lambda_function.py:168:generate_lambda_function LOG: Lambda hello_world has been successfully added to the project.
+2024-11-02 09:19:03,228 [INFO] USER:nurlan helper.py:328:timed LOG: Stage lambda_function, elapsed time: 0:00:00.017000
+2024-11-02 09:19:53,484 [INFO] USER:nurlan processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2024-11-02 09:19:56,260 [INFO] USER:nurlan handlers.py:146:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/nurlan/Desktop/aws-lab1'.
+2024-11-02 09:19:56,261 [INFO] USER:nurlan helper.py:328:timed LOG: Stage test, elapsed time: 0:00:00.003641
+2024-11-02 09:19:56,292 [INFO] USER:nurlan project_state.py:381:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\nurlan\Desktop\aws-lab1\jsrc\main\java\com\awslab1.
+2024-11-02 09:19:56,294 [INFO] USER:nurlan project_state.py:381:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\nurlan\Desktop\aws-lab1\src\lambdas.
+2024-11-02 09:19:56,295 [INFO] USER:nurlan project_state.py:381:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\nurlan\Desktop\aws-lab1\app\lambdas.
+2024-11-02 09:19:56,298 [INFO] USER:nurlan project_state.py:385:_update_lambdas_from_path LOG: Going to add the following 'nodejs' lambda:'hello_world' to the pending ProjectState.
+2024-11-02 09:19:56,299 [INFO] USER:nurlan project_state.py:381:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\nurlan\Desktop\aws-lab1\dnapp\lambdas.
+2024-11-02 09:19:56,300 [INFO] USER:nurlan project_state.py:381:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\nurlan\Desktop\aws-lab1\swagger_src.
+2024-11-02 09:19:56,311 [INFO] USER:nurlan nodejs.py:58:assemble_node_lambdas LOG: Going to package lambdas starting by path C:\Users\nurlan\Desktop\aws-lab1\app
+2024-11-02 09:19:56,312 [INFO] USER:nurlan nodejs.py:64:assemble_node_lambdas LOG: Going to build artifact in: C:\Users\nurlan\Desktop\aws-lab1\app\lambdas\hello_world
+2024-11-02 09:19:57,107 [INFO] USER:nurlan nodejs.py:122:install_requirements LOG: Artifacts path: C:\Users\nurlan\Desktop\aws-lab1\.syndicate-config-dev\bundles\aws-lab1_241102.091953\hello_world-1.0
+2024-11-02 09:19:59,166 [INFO] USER:nurlan helper.py:107:execute_command_by_path LOG: Running the command "npm install"
+
+up to date, audited 1 package in 1s
+
+found 0 vulnerabilities
+
+npm warn old lockfile
+npm warn old lockfile The package-lock.json file was created with an old version of npm,
+npm warn old lockfile so supplemental metadata must be fetched from the registry.
+npm warn old lockfile
+npm warn old lockfile This is a one-time fix-up, please be patient...
+npm warn old lockfile
+
+2024-11-02 09:19:59,166 [INFO] USER:nurlan nodejs.py:141:install_requirements LOG: No dependencies folder - nothing to copy.
+2024-11-02 09:19:59,194 [INFO] USER:nurlan nodejs.py:79:assemble_node_lambdas LOG: None
+2024-11-02 09:19:59,195 [INFO] USER:nurlan helper.py:328:timed LOG: Stage assemble_node, elapsed time: 0:00:02.887391
+2024-11-02 09:19:59,202 [INFO] USER:nurlan helper.py:328:timed LOG: Stage assemble_node, elapsed time: 0:00:02.894497
+2024-11-02 09:19:59,202 [INFO] USER:nurlan helper.py:328:timed LOG: Stage assemble, elapsed time: 0:00:02.911994
+2024-11-02 09:19:59,208 [INFO] USER:nurlan meta_processor.py:507:create_meta LOG: Bundle path: C:/Users/nurlan/Desktop/aws-lab1/bundles/aws-lab1_241102.091953
+2024-11-02 09:19:59,425 [INFO] USER:nurlan helper.py:291:write_content_to_file LOG: C:\Users\nurlan\Desktop\aws-lab1\.syndicate-config-dev/bundles/aws-lab1_241102.091953\build_meta.json file was created.
+2024-11-02 09:19:59,426 [INFO] USER:nurlan helper.py:328:timed LOG: Stage package_meta, elapsed time: 0:00:00.219858
+2024-11-02 09:19:59,759 [INFO] USER:nurlan bundle_processor.py:191:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2024-11-02 09:20:01,231 [INFO] USER:nurlan helper.py:328:timed LOG: Stage upload, elapsed time: 0:00:01.694032
+2024-11-02 09:20:01,241 [INFO] USER:nurlan helper.py:328:timed LOG: Stage build, elapsed time: 0:00:06.598491
+2024-11-02 09:22:30,835 [INFO] USER:nurlan processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2024-11-02 09:22:32,728 [INFO] USER:nurlan sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-11-02 09:22:32,728 [INFO] USER:nurlan helper.py:232:resolve_default_value LOG: Resolved value of bundle_name: aws-lab1_241102.091953
+2024-11-02 09:22:32,940 [INFO] USER:nurlan project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-11-02 09:22:32,941 [INFO] USER:nurlan project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-11-02 09:22:33,158 [INFO] USER:nurlan sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-11-02 09:22:33,362 [INFO] USER:nurlan project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-11-02 09:22:33,362 [INFO] USER:nurlan project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-11-02 09:22:33,562 [INFO] USER:nurlan sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-11-02 09:22:35,192 [INFO] USER:nurlan deployment_processor.py:392:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved.
+2024-11-02 09:22:35,192 [INFO] USER:nurlan deployment_processor.py:415:create_deployment_resources LOG: Going to deploy AWS resources
+2024-11-02 09:22:37,085 [INFO] USER:nurlan deployment_processor.py:65:_process_resources LOG: Processing iam_role resources
+2024-11-02 09:22:44,976 [INFO] USER:nurlan iam_resource.py:181:_create_role_from_meta LOG: Created IAM role cmtr-77278c6b-hello_world-role.
+2024-11-02 09:22:44,977 [INFO] USER:nurlan deployment_processor.py:77:_process_resources LOG: Processing lambda resources
+2024-11-02 09:22:52,287 [INFO] USER:nurlan lambda_resource.py:1355:_resolve_log_group LOG: Cloud Watch log group for lambda: cmtr-77278c6b-hello_world does not exists. Creating new log group with name: aws/lambda/cmtr-77278c6b-hello_world
+2024-11-02 09:22:53,029 [INFO] USER:nurlan deployment_processor.py:456:create_deployment_resources LOG: AWS resources were deployed successfully
+2024-11-02 09:22:53,031 [INFO] USER:nurlan deployment_processor.py:459:create_deployment_resources LOG: Going to apply dynamic changes
+2024-11-02 09:22:53,032 [INFO] USER:nurlan deployment_processor.py:461:create_deployment_resources LOG: Dynamic changes were applied successfully
+2024-11-02 09:22:53,034 [INFO] USER:nurlan deployment_processor.py:463:create_deployment_resources LOG: Going to apply post deployment tags
+2024-11-02 09:22:53,081 [INFO] USER:nurlan group_tagging_api_resource.py:87:apply_tags LOG: Tags were successfully applied.
+2024-11-02 09:22:53,081 [INFO] USER:nurlan deployment_processor.py:466:create_deployment_resources LOG: Going to create deploy output
+2024-11-02 09:22:54,918 [INFO] USER:nurlan bundle_processor.py:66:create_deploy_output LOG: Output file with name aws-lab1_241102.091953/outputs/lab-1.json has been created
+2024-11-02 09:22:54,918 [INFO] USER:nurlan deployment_processor.py:474:create_deployment_resources LOG: Deploy output for lab-1 was created.
+2024-11-02 09:22:54,922 [INFO] USER:nurlan helper.py:328:timed LOG: Stage deploy, elapsed time: 0:00:20.121143
+2024-11-02 09:22:55,226 [INFO] USER:nurlan project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-11-02 09:22:55,227 [INFO] USER:nurlan project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-11-02 09:22:55,465 [INFO] USER:nurlan sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
